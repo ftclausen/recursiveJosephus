@@ -9,6 +9,7 @@
 # https://ftclausen.github.io/mathematics/josephus-problem-revisited/
 # 
 # Which is based on the topic in Concrete Mathematics (Graham, Knuth, Patashnik)
+# This script is not the generalised Josephus. Just every other person is eliminated.
 import sys
 
 def josephus(people):
