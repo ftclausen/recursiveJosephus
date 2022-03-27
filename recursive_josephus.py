@@ -3,7 +3,7 @@
 # Friedrich "Fred" Clausen study notes
 #
 # A recursive implementation of the Josephus problem.  Seems to work but the
-# programmatic recursion is not quite like the mathetical recurrence.  Notes
+# programmatic recursion is not quite like the mathematical recurrence.  Notes
 # inline. See my blog post at
 #
 # https://ftclausen.github.io/mathematics/josephus-problem-revisited/
@@ -26,9 +26,9 @@ def josephus(people):
     # Recur on odd
     else:
         print(f'DEBUG: Odd person count: {people}')
-        # The match recurrence is J(2n + 1) = 2J(n) + 1 As with even we are
+        # The math recurrence is J(2n + 1) = 2J(n) + 1 As with even we are
         # using division _and_ making the numer even so we can divide since you
-        # can't have "half a person".  In the math these steps don't happen
+        # can't have "half a person".  In the math these extra steps don't happen
         return 2 * josephus((people - 1) / 2) + 1 
 
 if len(sys.argv) == 2:
